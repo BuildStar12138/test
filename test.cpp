@@ -158,7 +158,6 @@ string create12(){
 				
 				string num1=Transform_Int_String(Rand100());
 				s=s.append(num1);}
-				
 								
 			}
 	return s;
