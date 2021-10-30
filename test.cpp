@@ -6,6 +6,17 @@ int Rand100(){
 	int a=rand()%101;
 	return a;
 }
+double Double_Rand10000(){
+	
+	int a=rand()%101;
+	
+	int b=rand()%101;
+
+	int c=rand()%101;
+	double d=(double)c/100;
+	d+=a*b;
+	return d;
+}
 int Int_Rand10000(){
 	
 	int a=rand()%101;
@@ -171,6 +182,7 @@ string create12(){
 	return s;
 }
 
+
 string create34(){
 	string s;
 	char sym;
@@ -282,6 +294,11 @@ void judge()
 			 
 			
 			double answer;
+			
+			double an=calculate(s)*100;
+			int an0=round1(an);
+			double an1=(an0*1.0)/100;//转换成两位小数
+			
 			cin>>answer;
 		    double an=calculate(s)*100;
 		    int an0=an;
